@@ -1,158 +1,178 @@
 # Tactical Radar Drone Simulation System
 
+Real-time tactical radar simulation system designed for drone tracking, target monitoring, and mission control visualization.
+
+![Radar Preview](assets/preview.png)
+
+---
+
 ## Overview
 
-Tactical Radar is a real-time tactical drone simulation developed in Python using the Pygame library. The project was created as a college assignment focused on real-time rendering, object-oriented programming, simulation systems, and interactive graphical interfaces.
+This project simulates a tactical drone command interface inspired by military radar systems and real-time monitoring environments.
 
-The application simulates a military-inspired command center where autonomous drones patrol an operational area, track dynamic targets, execute attack missions, and return to base automatically. The interface includes radar scanning effects, animated particles, sound systems, mission logs, tactical panels, and visual effects designed to recreate a modern tactical environment.
+The system renders:
 
----
+- Drone positioning
+- Hostile targets
+- Radar sweep animation
+- Tactical HUD elements
+- Mission interface
+- Event system
+- Dynamic tracking visualization
 
-# Features
+The objective of the project is to explore:
 
-* Real-time tactical radar simulation
-* Autonomous drone patrol system
-* Dynamic moving targets
-* Mission assignment system
-* Interactive tactical interface
-* Radar sweep animation
-* Particle explosion effects
-* Drone trail rendering
-* Sound effects and audio feedback
-* State-based drone behavior
-* Fullscreen tactical HUD
-
----
-
-# Technologies Used
-
-* Python
-* Pygame
-* Object-Oriented Programming (OOP)
-* Real-time rendering systems
-* Particle systems
-* Event-driven programming
+- Real-time rendering
+- Simulation systems
+- Graphical interfaces
+- Event-driven programming
+- Coordinate systems
+- Radar visualization concepts
 
 ---
 
-# System Architecture
+## Features
 
-The project was refactored into a modular structure to improve scalability, readability, and maintainability.
+- Real-time radar rendering
+- Animated radar sweep
+- Drone patrol system
+- Tactical command interface
+- Threat visualization
+- Interactive target panel
+- Event log system
+- Military-inspired HUD
+- Dynamic object movement
+- Audio support
 
-## Main Modules
+---
 
-### Core
+## Technologies Used
+
+- Python
+- Pygame
+- Math
+- Real-time rendering systems
+
+---
+
+## System Components
+
+### Radar Engine
 
 Responsible for:
 
-* game loop;
-* configuration;
-* constants;
-* global settings.
+- Radar sweep calculations
+- Object detection
+- Rendering cycles
+- Coordinate mapping
 
-### Entities
+### Drone System
 
-Contains:
+Each drone contains:
 
-* drones;
-* targets;
-* explosions;
-* tactical units.
+- Patrol behavior
+- Movement logic
+- Target tracking
+- Operational state
 
-### Systems
+### Tactical HUD
 
-Handles:
+Displays:
 
-* mission management;
-* audio systems;
-* event logs;
-* radar logic.
-
-### UI
-
-Responsible for:
-
-* buttons;
-* tactical panels;
-* HUD rendering;
-* interface effects.
-
-### Utils
-
-Contains:
-
-* helper functions;
-* mathematical interpolation;
-* visual effects.
+- Active drones
+- Available targets
+- Mission controls
+- Event messages
 
 ---
 
-# Drone System
+## Preview
 
-Each drone operates independently using a state-based behavior system.
+### Tactical Interface
 
-Implemented states:
-
-* Patrolling
-* Assigned
-* Engaging
-* Attacking
-* Returning
-
-The drones automatically:
-
-* patrol the map;
-* receive targets;
-* move toward enemies;
-* execute attacks;
-* return to base.
+![Interface](assets/preview.png)
 
 ---
 
-# Radar and Visual Effects
+## Demo Video
 
-The radar system includes:
-
-* rotating sweep animation;
-* glow rendering;
-* tactical grid rendering;
-* lighting effects;
-* particle explosions;
-* animated movement trails.
-
-These systems were implemented manually using Pygame rendering functions.
+[Watch Demo](assets/demo.mp4)
 
 ---
 
-# Learning Objectives
+## Project Structure
 
-This project was developed to improve knowledge in:
-
-* real-time application development;
-* software architecture;
-* game loop systems;
-* object-oriented programming;
-* graphical rendering;
-* simulation logic;
-* event systems;
-* modular code organization.
-
----
-
-# Challenges
-
-The main development challenges included:
-
-* managing multiple simultaneous systems;
-* synchronizing real-time animations;
-* implementing smooth movement interpolation;
-* organizing large-scale code structure;
-* designing responsive tactical UI systems.
+```txt
+Tactical_Radar--Drone_Simulation_System/
+│
+├── assets/
+│   ├── preview.png
+│   └── demo.mp4
+│
+├── main.py
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── LICENSE
+```
 
 ---
 
-# Conclusion
+## How to Run
 
-Tactical Radar demonstrates how real-time simulation systems can be developed using Python and Pygame while applying advanced programming concepts such as modular architecture, state management, animation systems, and interactive rendering.
+Clone the repository:
 
-The project provided practical experience in software engineering, graphical programming, and system organization, serving as both a technical learning experience and a tactical simulation prototype.
+```bash
+git clone https://github.com/GMello-bc/Tactical-Radar-Drone-Simulation-System.git
+```
+
+Enter the project folder:
+
+```bash
+cd Tactical-Radar-Drone-Simulation-System
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the simulation:
+
+```bash
+python main.py
+```
+
+---
+
+## Future Improvements
+
+- Artificial intelligence for drones
+- Multiple radar modes
+- Multiplayer simulation
+- Terrain system
+- Heat signatures
+- Pathfinding
+- Advanced threat detection
+- Networking support
+- OpenGL rendering
+
+---
+
+## Project Goals
+
+This project was developed to study:
+
+- Simulation architecture
+- Real-time systems
+- Graphical rendering
+- Tactical visualization
+- Software organization
+- Interactive systems
+
+---
+
+## License
+
+MIT License
