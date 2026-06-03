@@ -9,7 +9,7 @@ class AudioSystem:
         """Inicializa os sons do jogo."""
         # Tentar carregar sons, com fallback se não existirem
         base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        sounds_path = os.path.join(base_path, "..", "sounds")
+        sounds_path = os.path.join(base_path, "sounds")
         
         try:
             self.select_sound = pygame.mixer.Sound(
