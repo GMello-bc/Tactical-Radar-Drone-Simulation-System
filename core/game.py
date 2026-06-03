@@ -41,10 +41,9 @@ class Game:
         self.RIGHT_X = settings.RIGHT_X
         self.RIGHT_W = settings.RIGHT_W
 
-        self.screen = pygame.display.set_mode(
-            (self.WIDTH, self.HEIGHT),
-            pygame.FULLSCREEN
-        )
+        # Modo de tela
+        self.fullscreen = settings.FULLSCREEN
+        self.create_screen()
 
         pygame.display.set_caption("Radar Tático")
 
@@ -119,6 +118,18 @@ class Game:
             "RETORNANDO": ORANGE,
         }
 
+    def create_screen(self):
+        """Cria ou recria a tela no modo fullscreen ou janela."""
+        if self.fullscreen:
+            self.screen = pygame.display.set_mode(
+                (self.WIDTH, self.HEIGHT),
+                pygame.FULLSCREEN
+            )
+        else:
+            self.screen = pygame.display.set_mode(
+                (self.WIDTH, self.HEIGHT)
+            )
+
     def handle_events(self, mouse):
         """Processa eventos do jogo.
         
@@ -133,6 +144,12 @@ class Game:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     self.running = False
+                
+                # Alternar entre fullscreen e janela com F11
+                if event.key == pygame.K_F11:
+                    self.fullscreen = not self.fullscreen
+                    self.create_screen()
+                    pygame.display.set_caption("Radar Tático")
 
             if event.type == pygame.MOUSEBUTTONDOWN:
                 mx, my = mouse
