@@ -1,158 +1,174 @@
 # Tactical Radar Drone Simulation System
 
-## Overview
+Real-time tactical radar simulation system designed for drone tracking, target monitoring, and mission control visualization.
 
-Tactical Radar is a real-time tactical drone simulation developed in Python using the Pygame library. The project was created as a college assignment focused on real-time rendering, object-oriented programming, simulation systems, and interactive graphical interfaces.
+---
 
-The application simulates a military-inspired command center where autonomous drones patrol an operational area, track dynamic targets, execute attack missions, and return to base automatically. The interface includes radar scanning effects, animated particles, sound systems, mission logs, tactical panels, and visual effects designed to recreate a modern tactical environment.
+# Preview
+
+![Radar Preview](./assets/preview.png)
+
+---
+
+# Overview
+
+This project simulates a tactical drone command interface inspired by military radar systems and real-time monitoring environments.
+
+The simulation includes:
+
+- Real-time radar sweep
+- Drone patrol tracking
+- Tactical HUD interface
+- Dynamic hostile targets
+- Event monitoring
+- Mission execution system
+- Animated visualization
+
+The main objective of this project is to study:
+
+- Real-time rendering
+- Simulation systems
+- Interactive interfaces
+- Coordinate systems
+- Radar visualization concepts
+- Event-driven architecture
 
 ---
 
 # Features
 
-* Real-time tactical radar simulation
-* Autonomous drone patrol system
-* Dynamic moving targets
-* Mission assignment system
-* Interactive tactical interface
-* Radar sweep animation
-* Particle explosion effects
-* Drone trail rendering
-* Sound effects and audio feedback
-* State-based drone behavior
-* Fullscreen tactical HUD
+- Real-time radar rendering
+- Animated radar sweep effect
+- Drone tracking system
+- Dynamic hostile targets
+- Tactical control panel
+- Event logging system
+- Interactive mission button
+- Military-inspired UI/HUD
+- Smooth object movement
+- Sound support
 
 ---
 
 # Technologies Used
 
-* Python
-* Pygame
-* Object-Oriented Programming (OOP)
-* Real-time rendering systems
-* Particle systems
-* Event-driven programming
+- Python
+- Pygame
+- Math
+- Real-time rendering systems
 
 ---
 
-# System Architecture
+# Demo Video
 
-The project was refactored into a modular structure to improve scalability, readability, and maintainability.
+[Watch Demo Video](./assets/demo.mp4)
 
-## Main Modules
+---
 
-### Core
+# Project Structure
+
+```txt
+Tactical-Radar-Drone-Simulation-System/
+│
+├── assets/
+│   ├── preview.png
+│   └── demo.mp4
+│
+├── main.py
+├── README.md
+├── requirements.txt
+├── .gitignore
+└── LICENSE
+```
+
+---
+
+# Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/GMello-bc/Tactical-Radar-Drone-Simulation-System.git
+```
+
+Enter the project folder:
+
+```bash
+cd Tactical-Radar-Drone-Simulation-System
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the project:
+
+```bash
+python main.py
+```
+
+---
+
+# System Components
+
+## Radar Engine
 
 Responsible for:
 
-* game loop;
-* configuration;
-* constants;
-* global settings.
+- Radar sweep calculations
+- Object rendering
+- Detection simulation
+- Coordinate mapping
 
-### Entities
+## Drone System
 
-Contains:
+Each drone includes:
 
-* drones;
-* targets;
-* explosions;
-* tactical units.
+- Patrol behavior
+- Dynamic movement
+- Tracking logic
+- Operational status
 
-### Systems
+## Tactical HUD
 
-Handles:
+Displays:
 
-* mission management;
-* audio systems;
-* event logs;
-* radar logic.
-
-### UI
-
-Responsible for:
-
-* buttons;
-* tactical panels;
-* HUD rendering;
-* interface effects.
-
-### Utils
-
-Contains:
-
-* helper functions;
-* mathematical interpolation;
-* visual effects.
+- Active drones
+- Threat targets
+- Mission controls
+- System events
 
 ---
 
-# Drone System
+# Future Improvements
 
-Each drone operates independently using a state-based behavior system.
-
-Implemented states:
-
-* Patrolling
-* Assigned
-* Engaging
-* Attacking
-* Returning
-
-The drones automatically:
-
-* patrol the map;
-* receive targets;
-* move toward enemies;
-* execute attacks;
-* return to base.
+- AI-controlled drones
+- Advanced radar modes
+- Multiplayer simulation
+- Terrain system
+- Heat signature detection
+- Pathfinding algorithms
+- Networking support
+- OpenGL rendering
+- ECS architecture
 
 ---
 
-# Radar and Visual Effects
-
-The radar system includes:
-
-* rotating sweep animation;
-* glow rendering;
-* tactical grid rendering;
-* lighting effects;
-* particle explosions;
-* animated movement trails.
-
-These systems were implemented manually using Pygame rendering functions.
-
----
-
-# Learning Objectives
+# Project Goals
 
 This project was developed to improve knowledge in:
 
-* real-time application development;
-* software architecture;
-* game loop systems;
-* object-oriented programming;
-* graphical rendering;
-* simulation logic;
-* event systems;
-* modular code organization.
+- Real-time systems
+- Simulation architecture
+- Computer graphics concepts
+- Interface design
+- Interactive applications
+- Tactical visualization systems
 
 ---
 
-# Challenges
+# License
 
-The main development challenges included:
-
-* managing multiple simultaneous systems;
-* synchronizing real-time animations;
-* implementing smooth movement interpolation;
-* organizing large-scale code structure;
-* designing responsive tactical UI systems.
-
----
-
-# Conclusion
-
-Tactical Radar demonstrates how real-time simulation systems can be developed using Python and Pygame while applying advanced programming concepts such as modular architecture, state management, animation systems, and interactive rendering.
-
-The project provided practical experience in software engineering, graphical programming, and system organization, serving as both a technical learning experience and a tactical simulation prototype.
+MIT License
