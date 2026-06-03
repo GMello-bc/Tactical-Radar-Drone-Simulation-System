@@ -1,6 +1,5 @@
 """
 Radar Tático - Sistema de Comando de Drones
-Versão refatorada com arquitetura profissional
 """
 
 from core.game import Game
