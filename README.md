@@ -11,12 +11,6 @@ Simulation running in real time:
 
 ---
 
-## 📸 Preview
-
-![Radar Preview](assets/preview.png)
-
----
-
 ## Overview
 
 Tactical Radar is a real-time tactical drone simulation developed in Python using the Pygame library. The project was created as a college assignment focused on real-time rendering, object-oriented programming, simulation systems, and interactive graphical interfaces.
