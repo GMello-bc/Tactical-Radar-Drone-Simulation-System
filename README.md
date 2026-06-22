@@ -4,7 +4,7 @@ Real-time tactical radar simulation system designed for drone tracking, target m
 
 ---
 
-## 🎬 Demo
+## Demo
 Simulation running in real time:
 
 ![Demo](assets/demo.gif)
